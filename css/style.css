@@ -1,0 +1,281 @@
+/*====================COMMON SETTING===========================*/
+* {
+  box-sizing: border-box; }
+
+body, header, .content {
+  background-color: #e9e9e9; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #848484; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.clearfix::after, .clearfix::before {
+  content: "";
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
+
+/*====================HEADER===========================*/
+header .top {
+  padding: 7px 0 5px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #bfbfbf;
+  box-shadow: 0px 0.5px 1px #bfbfbf; }
+  header .top__logo {
+    float: left; }
+  header .top__menu {
+    float: right; }
+    header .top__menu_about {
+      display: inline;
+      margin: 0;
+      padding: 0; }
+      header .top__menu_about li {
+        list-style: none;
+        float: left;
+        margin: 0 3px; }
+        header .top__menu_about li a {
+          color: #848484;
+          font-size: 13px;
+          line-height: 200%; }
+        header .top__menu_about li a:hover {
+          color: #dd5555; }
+    header .top__menu_soical {
+      display: inline;
+      margin: 0;
+      padding: 0px; }
+      header .top__menu_soical li {
+        list-style: none;
+        float: left;
+        margin: 5px 7px; }
+        header .top__menu_soical li i {
+          width: 14px;
+          height: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px; }
+        header .top__menu_soical li i.twitter {
+          background: url(../imgs/twitter.png) no-repeat; }
+        header .top__menu_soical li i.vimeo {
+          background: url(../imgs/vimeo.png) no-repeat; }
+        header .top__menu_soical li i.fb {
+          background: url(../imgs/fb.png) no-repeat; }
+        header .top__menu_soical li i.insta {
+          background: url(../imgs/instagram.png) no-repeat; }
+        header .top__menu_soical li i.dribbble {
+          background: url(../imgs/dribble.png) no-repeat; }
+        header .top__menu_soical li i.reddit {
+          background: url(../imgs/reddit.png) no-repeat; }
+        header .top__menu_soical li a:hover i.twitter {
+          background: url(../imgs/twitter2.png) no-repeat; }
+        header .top__menu_soical li a:hover i.vimeo {
+          background: url(../imgs/vimeo2.png) no-repeat; }
+        header .top__menu_soical li a:hover i.fb {
+          background: url(../imgs/fb2.png) no-repeat; }
+        header .top__menu_soical li a:hover i.insta {
+          background: url(../imgs/instagram2.png) no-repeat; }
+        header .top__menu_soical li a:hover i.dribbble {
+          background: url(../imgs/dribble2.png) no-repeat; }
+        header .top__menu_soical li a:hover i.reddit {
+          background: url(../imgs/reddit2.png) no-repeat; }
+header .menu {
+  padding: 30px 0 8px;
+  border-bottom: 1px solid #bfbfbf; }
+  header .menu nav {
+    float: left; }
+    header .menu nav ul {
+      margin: 0;
+      padding: 0; }
+      header .menu nav ul li {
+        list-style: none;
+        float: left;
+        margin-right: 15px; }
+        header .menu nav ul li a {
+          font-size: 14px;
+          font-weight: 900;
+          color: #555555;
+          padding: 20px 0; }
+        header .menu nav ul li a:hover {
+          color: #dd5555;
+          border-bottom: 1px solid #dd5555; }
+  header .menu .search_box {
+    float: right; }
+    header .menu .search_box input[type="text"] {
+      box-sizing: border-box;
+      padding: 7px 5px 5px;
+      font-size: 14px;
+      border: 1px solid #bfbfbf;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      position: relative;
+      top: -7px; }
+    header .menu .search_box .search_button {
+      width: 18px;
+      height: 18px;
+      background: url(../imgs/search.png) no-repeat center center;
+      border: 1px solid transparent;
+      position: absolute;
+      top: 80px;
+      right: 145px; }
+
+/*====================CONTENT===========================*/
+.content__head_adv {
+  text-align: center; }
+  .content__head_adv p {
+    margin: 0;
+    padding: 0; }
+  .content__head_adv p:first-child {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #555555;
+    font-weight: 100; }
+    .content__head_adv p:first-child span {
+      font-weight: bold; }
+  .content__head_adv p:last-child {
+    margin: 10px 0 20px; }
+.content__main .product {
+  width: 25%;
+  padding: 10px;
+  float: left; }
+  .content__main .product__photo {
+    border-top: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 0.5px 1px #bfbfbf;
+    position: relative; }
+    .content__main .product__photo img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .content__main .product__photo .data {
+      display: none;
+      position: absolute;
+      top: 10px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      left: 10px;
+      background-color: #FFFFFF;
+      padding: 10px; }
+      .content__main .product__photo .data span {
+        color: #555555; }
+      .content__main .product__photo .data i {
+        margin: 0 3px; }
+      .content__main .product__photo .data .fa-download {
+        color: #65c0d2; }
+      .content__main .product__photo .data .fa-heart {
+        color: #57c561; }
+  .content__main .product__info {
+    border-bottom: 1px solid #bfbfbf;
+    border-left: 1px solid #bfbfbf;
+    border-right: 1px solid #bfbfbf;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0px 0.5px 1px #bfbfbf;
+    background-color: #FFFFFF;
+    padding: 20px; }
+    .content__main .product__info p {
+      margin: 0;
+      padding: 0; }
+    .content__main .product__info_title {
+      color: #555555;
+      font-weight: bold; }
+    .content__main .product__info_date {
+      font-size: 12px;
+      margin: 10px 0 !important;
+      color: #bbbab9; }
+    .content__main .product__info_desc {
+      font-size: 13px;
+      color: #848484; }
+.content__main .product:hover .data {
+  display: block; }
+.content__main .product:hover .product__info_title {
+  color: #dd5555; }
+.content__control {
+  text-align: center;
+  padding: 20px 0; }
+  .content__control a {
+    color: #555555;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 2px solid #bbbab9;
+    border-radius: 50%; }
+  .content__control a:hover {
+    color: #dd5555;
+    border: 2px solid #dd5555; }
+.content__tail_adv {
+  text-align: center;
+  padding: 30px 0; }
+
+/*====================FOOTER===========================*/
+footer {
+  background-color: #FFFFFF;
+  border-top: 1px solid #bfbfbf; }
+  footer .contact__item {
+    width: 33.3333333333%;
+    padding: 10px;
+    float: left; }
+    footer .contact__item p {
+      font-size: 14px;
+      line-height: 150%; }
+    footer .contact__item_link {
+      float: left;
+      margin: 0 15px; }
+      footer .contact__item_link p {
+        color: #555555;
+        font-weight: bold; }
+      footer .contact__item_link ul {
+        margin: 0;
+        padding: 0; }
+        footer .contact__item_link ul li {
+          list-style: none; }
+          footer .contact__item_link ul li a {
+            font-size: 14px;
+            line-height: 200%;
+            color: #848484; }
+            footer .contact__item_link ul li a i {
+              width: 14px;
+              height: 14px;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 10px; }
+            footer .contact__item_link ul li a i.twitter {
+              background: url(../imgs/twitter.png) no-repeat; }
+            footer .contact__item_link ul li a i.vimeo {
+              background: url(../imgs/vimeo.png) no-repeat; }
+            footer .contact__item_link ul li a i.fb {
+              background: url(../imgs/fb.png) no-repeat; }
+            footer .contact__item_link ul li a i.insta {
+              background: url(../imgs/instagram.png) no-repeat; }
+            footer .contact__item_link ul li a i.dribbble {
+              background: url(../imgs/dribble.png) no-repeat; }
+            footer .contact__item_link ul li a i.reddit {
+              background: url(../imgs/reddit.png) no-repeat; }
+          footer .contact__item_link ul li a:hover {
+            color: #dd5555; }
+            footer .contact__item_link ul li a:hover i.twitter {
+              background: url(../imgs/twitter2.png) no-repeat; }
+            footer .contact__item_link ul li a:hover i.vimeo {
+              background: url(../imgs/vimeo2.png) no-repeat; }
+            footer .contact__item_link ul li a:hover i.fb {
+              background: url(../imgs/fb2.png) no-repeat; }
+            footer .contact__item_link ul li a:hover i.insta {
+              background: url(../imgs/instagram2.png) no-repeat; }
+            footer .contact__item_link ul li a:hover i.dribbble {
+              background: url(../imgs/dribble2.png) no-repeat; }
+            footer .contact__item_link ul li a:hover i.reddit {
+              background: url(../imgs/reddit2.png) no-repeat; }
+
+/*====================RWD===========================*/
+
+/*# sourceMappingURL=style.css.map */
