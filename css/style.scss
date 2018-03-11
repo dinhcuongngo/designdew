@@ -337,8 +337,39 @@ footer{
 		}
 	}
 	.copyright{
-		//border-top: 1px solid $cl-border;
-		//box-shadow:0px 0.5px 1px $cl-border; 
+		border-top: 1px solid $cl-border;
+		box-shadow:0px 0.5px 1px $cl-border; 
+		.about{
+			p{
+				font-size: 14px;
+				float: left;
+			}
+			ul{
+				margin: 12px 0 0 20px;
+				padding: 0;
+				float: left;
+				li {
+					list-style: none;
+					display: inline;
+					a{
+						color: $cl-text;
+						font-size: 14px;
+						font-weight: bold; 
+					}
+					a:hover {
+						color: $cl-hover;
+					}
+				}
+			}
+		}
+		p{
+			float: right;
+			font-size: 14px;
+			span{
+				color: $cl-hover;
+				font-weight: bold;
+			}
+		}
 	}
 }
 

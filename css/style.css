@@ -275,6 +275,31 @@ footer {
               background: url(../imgs/dribble2.png) no-repeat; }
             footer .contact__item_link ul li a:hover i.reddit {
               background: url(../imgs/reddit2.png) no-repeat; }
+  footer .copyright {
+    border-top: 1px solid #bfbfbf;
+    box-shadow: 0px 0.5px 1px #bfbfbf; }
+    footer .copyright .about p {
+      font-size: 14px;
+      float: left; }
+    footer .copyright .about ul {
+      margin: 12px 0 0 20px;
+      padding: 0;
+      float: left; }
+      footer .copyright .about ul li {
+        list-style: none;
+        display: inline; }
+        footer .copyright .about ul li a {
+          color: #848484;
+          font-size: 14px;
+          font-weight: bold; }
+        footer .copyright .about ul li a:hover {
+          color: #dd5555; }
+    footer .copyright p {
+      float: right;
+      font-size: 14px; }
+      footer .copyright p span {
+        color: #dd5555;
+        font-weight: bold; }
 
 /*====================RWD===========================*/
 
